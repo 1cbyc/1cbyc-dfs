@@ -22,6 +22,6 @@ if(curl_errno($ch)) {
 curl_close($ch);
 
 // Save the response to a file
-$file = 'example.html';
+$file = 'website-to-download.html';
 file_put_contents($file, $response);
 ?>
