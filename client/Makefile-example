@@ -1,0 +1,20 @@
+CC = gcc
+CFLAGS = -Wall
+SERVER_SRC = server/server.c
+CLIENT_SRC = client/client.c
+SERVER_OBJ = server.o
+CLIENT_OBJ = client.o
+EXEC_SERVER = server/server
+EXEC_CLIENT = client/client
+
+# Compile server
+$(EXEC_SERVER): $(SERVER_SRC)
+	$(CC) $(CFLAGS) $(SERVER_SRC) -o $(EXEC_SERVER)
+
+# Compile client
+$(EXEC_CLIENT): $(CLIENT_SRC)
+	$(CC) $(CFLAGS) $(CLIENT_SRC) -o $(EXEC_CLIENT)
+
+# Clean up object files
+clean:
+	rm -f $(SERVER_OBJ) $(CLIENT_OBJ) $(EXEC_SERVER) $(EXEC_CLIENT)
