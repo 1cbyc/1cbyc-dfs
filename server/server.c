@@ -13,7 +13,8 @@ void handle_client(int client_sock) {
     FILE *file = fopen(FILENAME, "wb");
     if (file == NULL) {
         perror("Failed to open file");
-        close(client_sock)
+        close(client_sock);
+        return;
     }
     int bytes_received;
 
