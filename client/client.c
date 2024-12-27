@@ -14,6 +14,8 @@ int send_file(int sock, const char *filename) {
         perror("File not found");
         return -1;
     }
+
+    char buffer
 }
 
 int main() {
