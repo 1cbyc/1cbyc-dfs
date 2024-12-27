@@ -19,6 +19,7 @@ int download_file(int sock, const char *filename) {
     ssize_t bytes_received;
 
     // requesting the file from the server
+    send
 
 }
 
