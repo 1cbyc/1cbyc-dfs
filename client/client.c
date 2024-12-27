@@ -6,6 +6,7 @@
 
 #define SERVER_ADDR "127.0.0.1"
 #define SERVER_PORT 8080
+#define 
 
 int main() {
     int sock;
