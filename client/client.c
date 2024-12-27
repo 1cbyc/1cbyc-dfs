@@ -26,6 +26,8 @@ int download_file(int sock, const char *filename) {
         fwrite(buffer, 1, bytes_received, file);
     }
 
+    if (bytes_received )
+
 }
 
 int send_file(int sock, const char *filename) {
