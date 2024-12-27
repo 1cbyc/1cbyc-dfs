@@ -36,29 +36,29 @@ int download_file(int sock, const char *filename) {
     return 0;
 }
 
-int send_file(int sock, const char *filename) {
-    FILE *file = fopen(filename, "rb");
-    if (file == NULL) {
-        perror("File not found");
-        return -1;
-    }
+// int send_file(int sock, const char *filename) {
+//     FILE *file = fopen(filename, "rb");
+//     if (file == NULL) {
+//         perror("File not found");
+//         return -1;
+//     }
 
-    char buffer[1024];
-    size_t n;
+//     char buffer[1024];
+//     size_t n;
 
-    // want to send file data to the server
-    while ((n fread(buffer, 1, sizeof(buffer), file)) > 0) {
-        if (send(sock, buffer, n, 0) == -1) {
-            perror("Send failed");
-            fclose(file);
-            return -1;
-        }
-    }
+//     // want to send file data to the server
+//     while ((n fread(buffer, 1, sizeof(buffer), file)) > 0) {
+//         if (send(sock, buffer, n, 0) == -1) {
+//             perror("Send failed");
+//             fclose(file);
+//             return -1;
+//         }
+//     }
 
-    fclose(file);
-    printf("File sent successfully.\n");
-    return 0;
-}
+//     fclose(file);
+//     printf("File sent successfully.\n");
+//     return 0;
+// }
 
 int main() {
     int sock;
