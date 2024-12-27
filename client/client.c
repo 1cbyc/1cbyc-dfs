@@ -20,6 +20,7 @@ int download_file(int sock, const char *filename) {
 
     // requesting the file from the server
     send(sock, filename, strlen(filename), 0);
+
     
 
 }
