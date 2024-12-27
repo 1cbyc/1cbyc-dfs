@@ -36,7 +36,7 @@ int main() {
 
     send(sock, message, strlen(message), 0);
 
-    // Receive response from the server
+    // makinh sure to receiving response from the server
     int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
     message[bytes_received] = '\0';
     printf("Server response: %s\n", message);
