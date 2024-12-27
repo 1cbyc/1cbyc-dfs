@@ -19,4 +19,4 @@ $(EXEC_CLIENT): $(CLIENT_SRC)
 clean:
 	rm -f $(SERVER_OBJ) $(CLIENT_OBJ) $(EXEC_SERVER) $(EXEC_CLIENT)
 
-# the aim clearly is to make sure it can run for both server and client
+# the aim clearly is to make sure it can run for both server and client and i h
