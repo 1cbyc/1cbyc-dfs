@@ -66,8 +66,6 @@ int main() {
         printf("File upload failed\n");
     }
 
-    close(sock)
-
     // making sure to receiving response from the server
     int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
     message[bytes_received] = '\0';
