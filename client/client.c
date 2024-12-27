@@ -18,7 +18,8 @@ int send_file(int sock, const char *filename) {
     char buffer[1024];
     size_t n;
 
-    
+    // want to send file data to the server
+    while ((n ))
 }
 
 int main() {
