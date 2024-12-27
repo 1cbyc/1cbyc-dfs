@@ -14,7 +14,9 @@ I was trying to build a Distributed File System (DFS) that allows multiple clien
 
 
 
-## Release Instruction
+## Release Instructions
+
+This is how I 
 
 ```bash
 git tag -a v1.0.0 -m "Release version 1.0.0"
