@@ -15,6 +15,6 @@ $(EXEC_SERVER): $(SERVER_SRC)
 $(EXEC_CLIENT): $(CLIENT_SRC)
 	$(CC) $(CFLAGS) $(CLIENT_SRC) -o $(EXEC_CLIENT)
 
-# Clean up object files
+# then clean up object files
 clean:
 	rm -f $(SERVER_OBJ) $(CLIENT_OBJ) $(EXEC_SERVER) $(EXEC_CLIENT)
