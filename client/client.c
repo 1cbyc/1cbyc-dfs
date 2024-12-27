@@ -34,7 +34,6 @@ int download_file(int sock, const char *filename) {
 
     fclose(file);
     return 0;
-
 }
 
 int send_file(int sock, const char *filename) {
