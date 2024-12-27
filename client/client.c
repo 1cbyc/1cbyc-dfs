@@ -22,7 +22,8 @@ int send_file(int sock, const char *filename) {
     while ((n fread(buffer, 1, sizeof(buffer), file)) > 0) {
         if (send(sock, buffer, n, 0) == -1) {
             perror("Send failed");
-            fclose(file)
+            fclose(file);
+            return -1;
         }
     }
 }
