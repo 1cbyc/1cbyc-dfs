@@ -26,6 +26,8 @@ int send_file(int sock, const char *filename) {
             return -1;
         }
     }
+
+    fclose(file)
 }
 
 int main() {
