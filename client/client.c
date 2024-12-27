@@ -61,6 +61,8 @@ int main() {
 
     send(sock, message, strlen(message), 0);
 
+    
+
     // making sure to receiving response from the server
     int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
     message[bytes_received] = '\0';
