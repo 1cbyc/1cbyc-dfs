@@ -17,7 +17,7 @@ void send_file(int client_sock, const char *filename) {
     char buffer[1024];
     size_t bytes_read;
 
-    // Read file and send to the client
+    // to read file and send to the client
     while ((bytes_read = fread(buffer, 1, sizeof(buffer), file)) > 0) {
         if (send(client_sock, buffer, bytes_read, 0) == -1) {
             perror("Send failed");
@@ -34,7 +34,7 @@ void handle_client(int client_sock) {
     char filename[1024];
     ssize_t bytes_received;
 
-    // Receive the requested filename from the client
+    // to receive the requested filename from the client
     bytes_received = recv(client_sock, filename, sizeof(filename), 0);
     if (bytes_received <= 0) {
         perror("Receive failed");
