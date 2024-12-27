@@ -28,6 +28,8 @@ int download_file(int sock, const char *filename) {
 
     if (bytes_received ==0) {
         printf("File download complete.\n");
+    } else {
+        perror("Re")
     }
 
 }
