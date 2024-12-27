@@ -10,4 +10,4 @@ I was trying to build a Distributed File System (DFS) that allows multiple clien
 
 ### what am i even doing?
 
-1. 
+1. i've made sure it all works on a basic level, so now i want to add a file upload functionality to allow client
