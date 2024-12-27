@@ -21,8 +21,8 @@ void handle_client(int client_sock) {
     ssize_t bytes_received;
     // to receive data from client side
     while ((bytes_received = recv(client_sock, buffer, sizeof(buffer) - 1, 0)) > 0) {
-        fwrite(buffer, 1, bytes_received)
-        buffer[bytes_received] = '\0';
+        fwrite(buffer, 1, bytes_received, file);
+        // buffer[bytes_received] = '\0';
         printf("Received: %s\n", buffer);
         
         // easily respond to the client (for now, echoing the message back)
