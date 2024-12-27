@@ -7,11 +7,11 @@ CLIENT_OBJ = client.o
 EXEC_SERVER = server/server
 EXEC_CLIENT = client/client
 
-# Compile server
+# to compile server
 $(EXEC_SERVER): $(SERVER_SRC)
 	$(CC) $(CFLAGS) $(SERVER_SRC) -o $(EXEC_SERVER)
 
-# Compile client
+# to compile client
 $(EXEC_CLIENT): $(CLIENT_SRC)
 	$(CC) $(CFLAGS) $(CLIENT_SRC) -o $(EXEC_CLIENT)
 
