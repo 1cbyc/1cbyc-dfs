@@ -16,8 +16,11 @@ int download_file(int sock, const char *filename) {
     }
 
     char buffer[1024];
-    ssize_t bytes_received
+    ssize_t bytes_received;
+    
+
 }
+
 int send_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "rb");
     if (file == NULL) {
