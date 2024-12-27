@@ -1,0 +1,22 @@
+CC = gcc
+CFLAGS = -Wall
+SERVER_SRC = server/server.c
+CLIENT_SRC = client/client.c
+SERVER_OBJ = server.o
+CLIENT_OBJ = client.o
+EXEC_SERVER = server/server
+EXEC_CLIENT = client/client
+
+# to compile server
+$(EXEC_SERVER): $(SERVER_SRC)
+	$(CC) $(CFLAGS) $(SERVER_SRC) -o $(EXEC_SERVER)
+
+# to compile client
+$(EXEC_CLIENT): $(CLIENT_SRC)
+	$(CC) $(CFLAGS) $(CLIENT_SRC) -o $(EXEC_CLIENT)
+
+# to clean up object files
+clean:
+	rm -f $(SERVER_OBJ) $(CLIENT_OBJ) $(EXEC_SERVER) $(EXEC_CLIENT)
+
+# the aim clearly is to make sure it can run for both server and client
