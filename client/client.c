@@ -11,7 +11,7 @@
 int send_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "rb");
     if (file == NULL) {
-        perro
+        perror("File not found")
     }
 }
 
