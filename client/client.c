@@ -9,7 +9,8 @@
 #define FILENAME "sample.txt" // in my quest to add file upload
 
 int download_file(int sock, const char *filename) {
-    FILE *file = fopen(filename, "wb")
+    FILE *file = fopen(filename, "wb");
+    if (file ==)
 }
 int send_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "rb");
