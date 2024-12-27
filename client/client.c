@@ -88,16 +88,16 @@ int main() {
         printf("File download failed\n");
     }
 
-    // will send  a message to the server
-    printf("Enter message: ");
-    fgets(message, sizeof(message), stdin);
+    // // will send  a message to the server
+    // printf("Enter message: ");
+    // fgets(message, sizeof(message), stdin);
 
-    send(sock, message, strlen(message), 0);
+    // send(sock, message, strlen(message), 0);
     
-    // to send file to the server
-    if (send_file(sock, FILENAME) == -1) {
-        printf("File upload failed\n");
-    }
+    // // to send file to the server
+    // if (send_file(sock, FILENAME) == -1) {
+    //     printf("File upload failed\n");
+    // }
 
     // making sure to receiving response from the server
     // int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
