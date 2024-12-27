@@ -15,7 +15,7 @@ int send_file(int sock, const char *filename) {
         return -1;
     }
 
-    char buffer
+    char buffer[1024];si
 }
 
 int main() {
