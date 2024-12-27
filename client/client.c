@@ -26,7 +26,9 @@ int download_file(int sock, const char *filename) {
         fwrite(buffer, 1, bytes_received, file);
     }
 
-    if (bytes_received )
+    if (bytes_received ==0) {
+        printf("")
+    }
 
 }
 
