@@ -61,7 +61,8 @@ int main() {
 
     send(sock, message, strlen(message), 0);
     
-    //
+    // to send file to the server
+    
 
     // making sure to receiving response from the server
     int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
