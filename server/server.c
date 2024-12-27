@@ -37,7 +37,6 @@ void handle_client(int client_sock) {
     }
 
     fclose(file);
-
     close(client_sock);
 }
 
