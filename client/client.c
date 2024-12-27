@@ -11,7 +11,7 @@
 int download_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "wb");
     if (file == NULL) {
-        perror
+        perror("Failed to open file")
     }
 }
 int send_file(int sock, const char *filename) {
