@@ -8,7 +8,9 @@
 #define SERVER_PORT 8080
 #define FILENAME "sample.txt" // in my quest to add file upload
 
-int send_file(int sock, const char *filename) {}
+int send_file(int sock, const char *filename) {
+    FILE *file =
+}
 
 int main() {
     int sock;
