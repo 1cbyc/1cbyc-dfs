@@ -30,6 +30,7 @@ void handle_client(int client_sock) {
     }
 
     if (bytes_received == 0) {
+        printf("")
         printf("Client disconnected\n");
     } else {
         perror("recv failed");
