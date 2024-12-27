@@ -19,7 +19,9 @@ int send_file(int sock, const char *filename) {
     size_t n;
 
     // want to send file data to the server
-    while ((n fread(buffer, 1, sizeof(buffer), file)) > 0)
+    while ((n fread(buffer, 1, sizeof(buffer), file)) > 0) {
+        if (send(sock))
+    }
 }
 
 int main() {
