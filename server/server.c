@@ -11,7 +11,9 @@
 void handle_client(int client_sock) {
     char buffer[1024];
     FILE *file = fopen(FILENAME, "wb");
-    if (file == NULL)
+    if (file == NULL) {
+        perror
+    }
     int bytes_received;
 
     // to receive data from client side
