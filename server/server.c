@@ -23,10 +23,10 @@ void handle_client(int client_sock) {
     while ((bytes_received = recv(client_sock, buffer, sizeof(buffer) - 1, 0)) > 0) {
         fwrite(buffer, 1, bytes_received, file);
         // buffer[bytes_received] = '\0';
-        printf("Received: %s\n", buffer);
+        // printf("Received: %s\n", buffer);
         
         // easily respond to the client (for now, echoing the message back)
-        send(client_sock, buffer, bytes_received, 0);
+        // send(client_sock, buffer, bytes_received, 0);
     }
 
     if (bytes_received == 0) {
