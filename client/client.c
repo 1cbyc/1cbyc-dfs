@@ -10,7 +10,9 @@
 
 int download_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "wb");
-    if (file ==)
+    if (file == NULL) {
+        perror
+    }
 }
 int send_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "rb");
