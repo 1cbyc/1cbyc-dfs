@@ -45,7 +45,7 @@ void handle_client(int client_sock) {
     filename[bytes_received] = '\0'; // Null-terminate the filename
     printf("Client requested file: %s\n", filename);
 
-    // Send the requested file to the client
+    // to send the requested file to the client
     send_file(client_sock, filename);
 
     close(client_sock);
@@ -66,7 +66,7 @@ int main() {
     server_addr.sin_addr.s_addr = INADDR_ANY;
     server_addr.sin_port = htons(PORT);
 
-    // Bind the socket
+    // to bind the socket
     if (bind(server_fd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
         perror("Bind failed");
         exit(EXIT_FAILURE);
