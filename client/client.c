@@ -63,7 +63,8 @@ int main() {
     
     // to send file to the server
     if (send_file(sock, FILENAME) == -1) {
-        printf("File upload failed\n")
+        printf("File upload failed\n");
+        
     }
 
     // making sure to receiving response from the server
