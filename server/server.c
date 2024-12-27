@@ -10,6 +10,7 @@
 
 void handle_client(int client_sock) {
     char buffer[1024];
+    FILE *file
     int bytes_received;
 
     // to receive data from client side
