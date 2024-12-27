@@ -6,7 +6,7 @@
 
 #define PORT 8080
 #define MAX_CLIENTS 10
-#define FIL
+#define FILENAME "uploaded_file.txt"
 
 void handle_client(int client_sock) {
     char buffer[1024];
