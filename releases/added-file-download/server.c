@@ -56,7 +56,7 @@ int main() {
     struct sockaddr_in server_addr, client_addr;
     socklen_t addr_len = sizeof(client_addr);
 
-    // Create server socket
+    // to create server socket
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
         perror("Socket failed");
         exit(EXIT_FAILURE);
@@ -72,7 +72,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    // Listen for incoming connections
+    // to listen for incoming connections
     if (listen(server_fd, MAX_CLIENTS) < 0) {
         perror("Listen failed");
         exit(EXIT_FAILURE);
