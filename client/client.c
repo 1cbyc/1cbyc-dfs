@@ -15,7 +15,10 @@ int send_file(int sock, const char *filename) {
         return -1;
     }
 
-    char buffer[1024];si
+    char buffer[1024];
+    size_t n;
+
+    
 }
 
 int main() {
