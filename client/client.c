@@ -28,7 +28,8 @@ int send_file(int sock, const char *filename) {
     }
 
     fclose(file);
-    printf("File sent successfully.\n")
+    printf("File sent successfully.\n");
+    return 0;
 }
 
 int main() {
