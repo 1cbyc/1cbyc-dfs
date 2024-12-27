@@ -56,12 +56,12 @@ int main() {
     printf("Connected to server at %s:%d\n", SERVER_ADDR, SERVER_PORT);
 
     // will send  a message to the server
-    // printf("Enter message: ");
-    // fgets(message, sizeof(message), stdin);
+    printf("Enter message: ");
+    fgets(message, sizeof(message), stdin);
 
-    // send(sock, message, strlen(message), 0);
-
-    // to send file to the server
+    send(sock, message, strlen(message), 0);
+    
+    //
 
     // making sure to receiving response from the server
     int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
