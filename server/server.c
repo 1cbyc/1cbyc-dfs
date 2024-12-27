@@ -36,7 +36,8 @@ void handle_client(int client_sock) {
         perror("recv failed");
     }
 
-    fclose
+    fclose(file);
+    close(client_sock)
 
     close(client_sock);
 }
