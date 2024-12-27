@@ -6,7 +6,7 @@
 
 #define SERVER_ADDR "127.0.0.1"
 #define SERVER_PORT 8080
-#define FILENAME "sample.txt" // in my quest to add 
+#define FILENAME "sample.txt" // in my quest to add file upload
 
 int main() {
     int sock;
