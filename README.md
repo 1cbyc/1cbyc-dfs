@@ -38,3 +38,6 @@ minor updates - `+0.0.1`
 major updates - `+0.1.x`
 full product revamp/repurposing - `+1.x.x`
 
+## How to Use This Software
+
+
