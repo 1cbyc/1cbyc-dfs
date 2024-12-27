@@ -32,6 +32,8 @@ int download_file(int sock, const char *filename) {
         perror("recv failed");
     }
 
+    fclose(file)
+
 }
 
 int send_file(int sock, const char *filename) {
