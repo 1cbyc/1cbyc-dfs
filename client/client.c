@@ -10,7 +10,9 @@
 
 int send_file(int sock, const char *filename) {
     FILE *file = fopen(filename, "rb");
-    if (file ==)
+    if (file == NULL) {
+        perro
+    }
 }
 
 int main() {
