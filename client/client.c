@@ -22,7 +22,7 @@ int download_file(int sock, const char *filename) {
     send(sock, filename, strlen(filename), 0);
 
     // to receive the file data from the server
-    while ((bytes_received = recv(sock, )))
+    while ((bytes_received = recv(sock, buffer, sizeof(buffer), 0)))
 
 }
 
