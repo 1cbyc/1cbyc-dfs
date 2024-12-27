@@ -18,7 +18,7 @@ void handle_client(int client_sock) {
     }
     // int bytes_received;
 
-    
+    ssize_t bytes_received
 
     // to receive data from client side
     while ((bytes_received = recv(client_sock, buffer, sizeof(buffer) - 1, 0)) > 0) {
