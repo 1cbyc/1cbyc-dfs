@@ -16,7 +16,7 @@ I was trying to build a Distributed File System (DFS) that allows multiple clien
 
 ## Release Instructions
 
-This is how I 
+This is how I make my releases
 
 ```bash
 git tag -a v1.0.0 -m "Release version 1.0.0"
