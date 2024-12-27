@@ -84,7 +84,9 @@ int main() {
     printf("Connected to server at %s:%d\n", SERVER_ADDR, SERVER_PORT);
 
     // to download file
-    if (download_file(sock, FILENAME) == -1) {}
+    if (download_file(sock, FILENAME) == -1) {
+        printf
+    }
 
     // will send  a message to the server
     printf("Enter message: ");
