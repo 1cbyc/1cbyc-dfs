@@ -62,7 +62,9 @@ int main() {
     send(sock, message, strlen(message), 0);
     
     // to send file to the server
-    if (send_file(sock, FILENAME) == -1) 
+    if (send_file(sock, FILENAME) == -1) {
+        printf()
+    }
 
     // making sure to receiving response from the server
     int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
