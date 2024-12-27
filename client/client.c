@@ -85,7 +85,7 @@ int main() {
 
     // to download file
     if (download_file(sock, FILENAME) == -1) {
-        printf
+        printf("File download failed\n");
     }
 
     // will send  a message to the server
