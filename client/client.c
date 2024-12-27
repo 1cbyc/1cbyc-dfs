@@ -67,9 +67,9 @@ int main() {
     }
 
     // making sure to receiving response from the server
-    int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
-    message[bytes_received] = '\0';
-    printf("Server response: %s\n", message);
+    // int bytes_received = recv(sock, message, sizeof(message) - 1, 0);
+    // message[bytes_received] = '\0';
+    // printf("Server response: %s\n", message);
 
     close(sock);
     return 0;
